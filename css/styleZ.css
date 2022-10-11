@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.wrapper {
+  font-family: Roboto;
+  width: 50%;
+  margin: auto;
+}
+
+p {
+  line-height: 24px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+header ul {
+  margin: 4em 0 0 0;
+  padding: 0;
+}
+
+header li {
+  margin-right: 2em;
+}
+
+header li img {
+  margin-right: .5em;
+  width: 1em;
+}
+
+h1 {
+  font-size: 4em;
+  margin: 0;
+}
+
+.flex-blocks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image {
+  width: 15em;
+}
+
+.blue-bg {
+  width: 35%;
+  background-color: #1E4681;
+  color: white;
+  padding: 1em 1.5em;
+  margin: auto;
+  border-radius: 0.5em;
+}
+
+.blue-bg p {
+  margin: 0;
+}
+
+.andrey {
+  font-size: 0.7em;
+  text-align: right;
+  padding-top: 10px;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+.about-courses p {
+  width: 80%;
+}
+
+.list-with-picture .image {
+  width: 80%;
+}
+
+.little-text {
+  font-size: 0.7em;
+  line-height: 15px;
+}
+
+@media screen {}
