@@ -1,17 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
+
 body{
     font-family: roboto;
     width: 1440px;
+    margin: auto;
 }
-.container{
+
+h1{
+    font-family: 'roboto slab';
+}
+
+.wrapper{
+    margin-left: 60px;
+}
+
+
+.section1 .container{
     display: flex;
     flex-wrap: wrap;
 }
 
 h1{
     font-size: 55px;
-    padding-left: 60px;
 }
 
 .fa{
@@ -23,11 +35,61 @@ a{
     text-decoration: none;
 }
 
+/* ------------PRE SECTION ----------------- */
+
+
+
+.logo p{    
+    width: 85px;
+    font-size: 20px;
+    border-top: 10px solid rgb(0, 0, 0);
+    margin-bottom: 100px;
+}
+
+.date-info{
+    display: flex;
+}
+
+.data{
+    margin-right: 70px;
+}
+
+.pre-section h1{
+    font-size: 80px;
+    margin: 0;
+    width: 600px;
+    line-height:1;
+}
+
+.pre-section p{
+    font-size: 20px;
+}
+
+.pre-sec-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.additional-pre-sec{
+    width: 500px;
+    height: 200px;
+    background-color: #1E4681;
+    margin: 100px auto;
+}
+
+.additional-pre-sec p{
+    color: white;
+    font-size: 25px;
+    padding: 1em;
+    font-family: 'roboto slab';
+}
+
+
 /* ------------SECTION 0 ------------------- */
 
-.section-0{
+/* .section-0{
     padding-left: 50px;
-}
+} */
 
 .container-0{
     display: flex;
@@ -56,20 +118,24 @@ a{
     font-size: 18px;
 }
 
-.info2{
+.info{
     width: 150px;
     margin: auto;
+}
+
+.prod{
+    margin-left: 0;
 }
 
 
 /* ------------SECTION 1 --------------------*/
 
 .section1{
-    padding: 50px;
+    margin: 70px;
 }
 
 .block1{
-    margin: 20px;
+    margin: 10px 30px 10px 0;
     width: 400px;
     height: 300px;
     left: 84px;
