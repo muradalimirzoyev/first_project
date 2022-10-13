@@ -2,38 +2,30 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
 
+
 body{
     font-family: roboto;
-    width: 1440px;
+    max-width: 1440px;
     margin: auto;
-}
-
-h1{
-    font-family: 'roboto slab';
-}
-
-.wrapper{
-    margin-left: 60px;
-}
-
-
-.section1 .container{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-h1{
-    font-size: 55px;
 }
 
 .fa{
     font-size: 40px;
 }
 
+h2{
+    font-size: 55px;
+}
+
+h3{
+    font-size: 25px;
+}
 
 a{
     text-decoration: none;
 }
+
+
 
 /* ------------PRE SECTION ----------------- */
 
@@ -43,7 +35,7 @@ a{
     width: 85px;
     font-size: 20px;
     border-top: 10px solid rgb(0, 0, 0);
-    margin-bottom: 100px;
+    margin: 20px 0 100px 50px;
 }
 
 .date-info{
@@ -53,8 +45,12 @@ a{
 .data{
     margin-right: 70px;
 }
+.pre-section{
+    margin: 0 50px;
+}
 
 .pre-section h1{
+    font-family: 'roboto slab';
     font-size: 80px;
     margin: 0;
     width: 600px;
@@ -79,17 +75,58 @@ a{
 
 .additional-pre-sec p{
     color: white;
-    font-size: 25px;
+    font-size: 24px;
     padding: 1em;
     font-family: 'roboto slab';
+}
+
+@media (max-width: 830px){
+    .logo p{    
+        width: 60px;
+        font-size: 15px;
+    }
+        
+    .data{
+        margin-right: 40px;
+    }
+    
+    .pre-section h1{
+        font-family: 'roboto slab';
+        font-size: 50px;
+        margin: 0;
+        width: 400px;
+        line-height:1;
+    }
+    
+    .pre-section p{
+        font-size: 14px;
+    }
+
+    .pre-sec-right img{
+        height: 200px;
+    }
+    
+    .additional-pre-sec{
+        width: 390px;
+        height: 150px;
+        background-color: #1E4681;
+        margin: 100px auto;
+    }
+    
+    .additional-pre-sec p{
+        color: white;
+        font-size: 16px;
+        padding: 1em;
+        font-family: 'roboto slab';
+    }
 }
 
 
 /* ------------SECTION 0 ------------------- */
 
-/* .section-0{
+.section-0{
     padding-left: 50px;
-} */
+}
 
 .container-0{
     display: flex;
@@ -127,6 +164,41 @@ a{
     margin-left: 0;
 }
 
+/* ------------ FORMAT SECTION  --------------------*/
+
+.format-section{
+    margin: 100px 0 0 50px;
+
+}
+
+.format-section-3{
+    display: flex;
+    max-width: 1000px;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+
+.format-section-3 h3{
+    color: #1E4681;
+    font-size: 25px;
+}
+
+.format-section-3 p{
+    font-size: 18px;
+}
+
+.format-section-3 div{
+    width: 250px;
+}
+
+.format-section-info ul{
+    width: 400px;
+}
+
+li{
+    line-height: 1.5;
+    list-style-position: outside;
+}
 
 /* ------------SECTION 1 --------------------*/
 
@@ -143,7 +215,11 @@ a{
     background: #FFFFFF;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
+}
 
+.section1 .container{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .rect img{
