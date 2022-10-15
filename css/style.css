@@ -25,9 +25,23 @@ a{
     text-decoration: none;
 }
 
+@media (max-width:375px){
+    h2{
+        font-size: 25px;
+    }
+
+    h3{
+        font-size: 14px;
+    }
+
+    .fa{
+        font-size: 15px;
+    }
+}
 
 
-/* ------------PRE SECTION ----------------- */
+
+/* ------------PRE SECTION --- КАК СМОТРЕТЬ КИНО------------ */
 
 
 
@@ -40,11 +54,17 @@ a{
 
 .date-info{
     display: flex;
+    align-items: center;
+}
+
+.element{
+    margin-right: 70px;
 }
 
 .data{
-    margin-right: 70px;
+    margin-right: 10px;
 }
+
 .pre-section{
     margin: 0 50px;
 }
@@ -85,9 +105,13 @@ a{
         width: 60px;
         font-size: 15px;
     }
+
+    .data img{
+        width: 15px;
+    }
         
     .data{
-        margin-right: 40px;
+        margin-right: 10px;
     }
     
     .pre-section h1{
@@ -97,13 +121,17 @@ a{
         width: 400px;
         line-height:1;
     }
+
+    .element{
+        font-size: 14px;
+    }
     
     .pre-section p{
         font-size: 14px;
     }
 
     .pre-sec-right img{
-        height: 200px;
+        height: 80%;
     }
     
     .additional-pre-sec{
@@ -121,8 +149,55 @@ a{
     }
 }
 
+@media (max-width: 375px){
 
-/* ------------SECTION 0 ------------------- */
+    .data img{
+        width: 13px;
+    }
+        
+    .data{
+        margin-right: 3px;
+    }
+    
+    .pre-section h1{
+        font-size: 35px;
+        width: 300px;
+    }
+
+    .element{
+        font-size: 10px;
+        margin-right: 0;
+        width: 100px;
+    }
+    
+    .pre-section p{
+        font-size: 10px;
+    }
+
+    .pre-sec-right img{
+        height: 150px;
+        position: relative;
+        left: 150px;
+    }
+
+    .pre-sec-container{
+        display: block;
+    }
+    
+    .additional-pre-sec{
+        width: 200px;
+        height: 100px;
+        margin: 0;
+    }
+    
+    .additional-pre-sec p{
+        color: white;
+        font-size: 10px;
+    }
+}
+
+
+/* ------------SECTION 0 ---О КУРСЕ---------------- */
 
 .section-0{
     padding-left: 50px;
@@ -142,7 +217,7 @@ a{
 
 .second-section-0{
     margin-top: 30px;
-    margin-left: 160px;
+    margin-left: 100px;
 }
 
 
@@ -156,15 +231,94 @@ a{
 }
 
 .info{
-    width: 150px;
-    margin: auto;
+    margin-right: auto;
 }
 
 .prod{
     margin-left: 0;
 }
 
-/* ------------ FORMAT SECTION  --------------------*/
+@media (max-width:830px){
+    .first-section-0 p{
+        max-width: 600px;
+        width: 500px;
+        font-size: 15px;
+        line-height: 1.6rem;
+    }
+
+
+    .second-section-0{
+        margin-top: 30px;
+        margin-left: 80px;
+    }
+
+    
+    .second-section-0 img{
+        width: 200px;
+    }
+
+    .prod img{ 
+        width: 120px;
+    }
+
+
+    .info-side{
+        display: flex;
+        max-width: 600px;
+    }
+
+    .info p{
+        font-size: 12px;
+        margin: 0;
+    }
+}
+
+@media (max-width:375px){
+    .first-section-0 p{
+        width: 300px;
+        font-size: 10px;
+        line-height: 1rem;
+    }
+
+    .container-0{
+        display: block;
+    }
+
+
+    .second-section-0{
+        margin-top: 30px;
+        margin-left: 80px;
+    }
+
+    
+    .second-section-0 img{
+        width: 120px;
+    }
+
+    .prod img{ 
+        display: none;
+    }
+
+    .info{
+        margin-right: 0;
+    }
+
+    .info-side{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .info-side .time{
+        width: 100px;
+        margin: 20px 40px 20px 0;
+    }
+
+    .info p{
+        font-size: 10px;
+    }
+}
+
+/* ------------ FORMAT SECTION  ----ФОРМАТ----------------*/
 
 .format-section{
     margin: 100px 0 0 50px;
@@ -200,7 +354,69 @@ li{
     list-style-position: outside;
 }
 
-/* ------------SECTION 1 --------------------*/
+@media (max-width:830px){
+    .format-section{
+       margin: 50px 0 0 50px;
+
+   }
+
+   .format-section-3{
+       display: flex;
+       max-width: 830px;
+       justify-content: space-between;
+       margin: 70px 0;
+   }
+
+   .format-section-3 h3{
+       color: #1E4681;
+       font-size: 17px;
+   }
+
+   .format-section-3 p{
+       font-size: 12px;
+   }
+
+   .format-section-3 div{
+       width: 200px;
+   }
+
+   .format-section-info ul{
+       width: 400px;
+   }
+
+   li{
+       font-size: 14px;
+       line-height: 1.5;
+       list-style-position: outside;
+   }
+}
+
+@media (max-width:375px){
+   .format-section-3{
+       display: block;
+   }
+
+   .format-section-3 h3{
+       color: #1E4681;
+       font-size: 14px;
+       margin-bottom: -5px;
+   }
+
+   .format-section-3 p{
+       font-size: 10px;
+   }
+
+   .format-section-3 div{
+       margin: 30px 0;
+   }
+
+   li{
+       font-size: 12px;
+       margin-left: -20px;
+   }
+}
+
+/* ------------SECTION 1 ----ПРОГРАММА КУРСА----------------*/
 
 .section1{
     margin: 70px;
@@ -210,8 +426,6 @@ li{
     margin: 10px 30px 10px 0;
     width: 400px;
     height: 300px;
-    left: 84px;
-    border-radius: 30px;
     background: #FFFFFF;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
@@ -232,14 +446,69 @@ li{
     top: 0;
 }
 
-/* -----SECTION   2-------------------------------------- */
+@media (max-width:830px){
+    .block1{
+        margin: 10px 15px 10px 0;
+        width: 220px;
+        height: 177px;
+        background: #FFFFFF;
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.25);
+        border-radius: 30px;
+    }
+
+    .section1 .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .rect img{
+        width: 100%;
+        height: calc(150px / 1.7);
+    }
+  
+    .under-png h3 {
+        font-size: 80%;
+    }
+  
+      .under-png p{
+        font-size: 80%;
+    }
+}
+
+@media (max-width:375px){
+    .block1{
+        margin: 10px auto;
+        width: 185px;
+        height: 150px;
+    }
+
+    .section1 .container{
+        display: block;
+    }
+
+    .rect img{
+        width: 100%;
+        height: 75px;
+    }
+  
+    .under-png h3 {
+        font-size: 12px;
+    }
+  
+      .under-png p{
+        font-size: 10px;
+    }
+
+    .under-png{
+        margin-top: -5px;
+    }
+}
+
+/* -----SECTION   2-------КУРС ПРОШЛИ-------------------- */
 
 .section2{
     height: 780px;
     width: 1440px;
-    left: -1px;
-    top: 4625px;
-    border-radius: 0px;
     background: #EFEFEF;
 }
 
@@ -275,10 +544,94 @@ li{
     margin-right: 50px;
 }
 
+@media (max-width:830px){
+    .section2{
+      height: calc(780px / 1.7);
+      width: calc(1440px / 1.7);
+  }
+
+  .text-section2{
+      line-height: 1.5;
+      font-size: 12px;
+      margin-bottom: 50px;
+  }
+
+  .inside-section2{
+      height: 230px;
+      width: 200px;
+      border-radius: 30px;
+      background-color: white;
+  }
+
+  .main-part{
+      padding: 50px;
+  }
+  
+  .name-section2 h2{
+      font-size: 20px
+  }
+
+  .inside-section2{
+      padding: 30px;
+  }
+
+  .info-section2{
+    margin-top:-30px;
+  }
+
+  .image img{
+      width: calc(200px / 1.7);
+      height: calc(170px / 1.7);
+  }
+}
+
+@media (max-width:375px){
+    .section2{
+      height: 400px;
+      width: 375px;
+  }
+
+  .inside-section2{
+    height: 200px;
+}
+
+  .text-section2{
+      line-height: 1.4;
+      font-size: 10px;
+      margin-bottom: 50px;
+  }
+
+  .name-section2 h2,
+  .name-section2 p{
+      margin: 5px;
+  }
+
+  .name-section2 h2{
+    font-size: 15px;
+  }
+
+  .inside-section2{
+      width: 290px;
+      padding: 20px;
+  }
+
+  .info-section2{
+    margin-top:-30px;
+  }
+
+  .image img{
+      width: 80px;
+      height: 70px;
+      margin-right: 20px;
+  }
+
+  .main-part{
+    padding: 20px;
+  }
 
 
 
-/* ------------SECTION 3 --------------------- */
+/* ------------SECTION 3 -----НАЧАЛО КУРСА---------------- */
 
 .section3{
     background: #9DC9C8;
@@ -320,9 +673,74 @@ li{
     width: 300px;
 }
 
+@media (max-width:830px){
+    .section3{
+      background: #9DC9C8;
+      height: calc(780px / 1.7);
+      width: calc(1440px / 1.7);
+  }
 
 
-/* -----------SECTION 4 ------------------*/
+  .section3 p{
+      font-size: 12px;
+  }
+
+  .section3 .main-par{
+      font-size: 15px;
+  }
+
+  .section3 .price{
+      font-family: Roboto;
+      font-size: calc(80px / 1.7);
+      margin-top: -20px;
+  }
+
+  .container-section3{
+      padding: 80px 50px;
+  }
+
+  .text-section3{
+      display: flex;
+      width: 400px;
+  }
+
+  .text-in-section3{
+      margin-right: 60px;
+      width: 300px;
+  }
+}
+
+@media (max-width:375px){
+    .section3{
+      height: 360px;
+      width: 375px;
+  }
+
+
+  .section3 p{
+      font-size: 10px;
+  }
+
+  .section3 .main-par{
+      font-size: 12px;
+  }
+
+  .section3 .price{
+      font-family: Roboto;
+      font-size: 40px;
+      margin-top: -10px;
+  }
+
+  .container-section3{
+      padding: 80px 50px;
+  }
+
+  .text-section3{
+      width: 360px;
+  }
+}
+
+/* -----------SECTION 4 -----ПОДВАЛ-------------*/
 .section4{
     position: relative;
     height: 390px;
@@ -364,4 +782,95 @@ div.section4 .sincro{
 
 .footer p{
     font-size: 18px;
+}
+
+@media (max-width:830px){
+    .section4{
+      height: 200px;
+      width: 830px;
+      background-color: #000000;
+  }
+
+  .info-section4{
+      padding: 20px 90px;
+  }
+
+  .section4 p{
+      font-size: 12px;
+  }
+
+  div.section4 .sincro{
+      width: px;
+      border-top: 9px solid white;
+      width: 60px;
+      font-size: 12px;
+  }
+
+  .section4 a{  
+      color: white;
+      margin-right: 10px;
+  }
+
+  .info-section4{
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .footer{
+      position: absolute;
+      left: 90px;
+      bottom: 0px;
+  }
+
+  .footer p{
+      font-size: 10px;
+  }
+}
+
+@media (max-width:375px){
+    .section4{
+      width: 375px;
+  }
+
+  .info-section4{
+      padding: 10px 50px;
+  }
+
+  .section4 p{
+      font-size: 10px;
+  }
+
+  div.section4 .sincro{
+      width: 12px;
+      border-top: 7px solid white;
+      width: 50px;
+      font-size: 12px;
+  }
+
+  .section4 a{  
+      color: white;
+      margin-right: 10px;
+  }
+
+  .info-section4{
+      display: block;
+  }
+
+  .footer{
+      position: absolute;
+      left: 50px;
+      bottom: 0px;
+  }
+
+  .footer p{
+      font-size: 10px;
+  }
+
+  .num-section4{
+    margin-top: 30px;
+  }
+
+  .num-section4 p{
+    margin: 5px;
+  }
 }
