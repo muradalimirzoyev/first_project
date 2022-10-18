@@ -5,7 +5,7 @@
 
 body{
     font-family: roboto;
-    max-width: 1440px;
+    max-width: 80%;
     margin: auto;
 }
 
@@ -15,6 +15,7 @@ body{
 
 h2{
     font-size: 55px;
+    margin: 0;
 }
 
 h3{
@@ -23,6 +24,20 @@ h3{
 
 a{
     text-decoration: none;
+}
+
+@media (max-width:830px){
+    h2{
+        font-size: 25px;
+    }
+
+    h3{
+        font-size: 14px;
+    }
+
+    .fa{
+        font-size: 20px;
+    }
 }
 
 @media (max-width:375px){
@@ -66,7 +81,8 @@ a{
 }
 
 .pre-section{
-    margin: 0 50px;
+    background-color: #9DC9C8;
+    padding: 50px;
 }
 
 .pre-section h1{
@@ -101,9 +117,11 @@ a{
 }
 
 @media (max-width: 830px){
+
     .logo p{    
-        width: 60px;
-        font-size: 15px;
+        width: 50px;
+        font-size: 14px;
+        margin: 20px 50px;
     }
 
     .data img{
@@ -122,8 +140,13 @@ a{
         line-height:1;
     }
 
+    .data{
+        margin-right: 3px;
+    }
+
     .element{
         font-size: 14px;
+        margin-right: 50px;
     }
     
     .pre-section p{
@@ -131,7 +154,7 @@ a{
     }
 
     .pre-sec-right img{
-        height: 80%;
+        height: 200px;
     }
     
     .additional-pre-sec{
@@ -151,12 +174,22 @@ a{
 
 @media (max-width: 375px){
 
+    .logo p{    
+        width: 40px;
+        font-size: 12px;
+        margin: 20px 10px;
+    }
+
     .data img{
-        width: 13px;
+        width: 15px;
     }
         
     .data{
-        margin-right: 3px;
+        margin-right: 10px;
+    }
+
+    .data img{
+        width: 12px;
     }
     
     .pre-section h1{
@@ -164,10 +197,14 @@ a{
         width: 300px;
     }
 
+    .pre-section{
+        padding: 0;
+        width: 375px;
+    }
+
     .element{
         font-size: 10px;
-        margin-right: 0;
-        width: 100px;
+        margin-right: 30px;
     }
     
     .pre-section p{
@@ -185,9 +222,15 @@ a{
     }
     
     .additional-pre-sec{
-        width: 200px;
+        width: 70%;
         height: 100px;
         margin: 0;
+        font-size: 12px;
+        color: white;
+    }
+
+    blockquote{
+        margin-bottom: -10px;
     }
     
     .additional-pre-sec p{
@@ -201,6 +244,7 @@ a{
 
 .section-0{
     padding-left: 50px;
+    background-color: azure;
 }
 
 .container-0{
@@ -239,9 +283,15 @@ a{
 }
 
 @media (max-width:830px){
+
+
+    .container-0{
+        justify-content: flex-start;
+    }
+
     .first-section-0 p{
         max-width: 600px;
-        width: 500px;
+        width: 350px;
         font-size: 15px;
         line-height: 1.6rem;
     }
@@ -249,7 +299,7 @@ a{
 
     .second-section-0{
         margin-top: 30px;
-        margin-left: 80px;
+        margin-left: 30px;
     }
 
     
@@ -321,7 +371,8 @@ a{
 /* ------------ FORMAT SECTION  ----ФОРМАТ----------------*/
 
 .format-section{
-    margin: 100px 0 0 50px;
+    padding: 50px;
+    background-color: bisque;
 
 }
 
@@ -346,6 +397,7 @@ a{
 }
 
 .format-section-info ul{
+    margin-left: -20px;
     width: 400px;
 }
 
@@ -355,10 +407,6 @@ li{
 }
 
 @media (max-width:830px){
-    .format-section{
-       margin: 50px 0 0 50px;
-
-   }
 
    .format-section-3{
        display: flex;
@@ -378,10 +426,6 @@ li{
 
    .format-section-3 div{
        width: 200px;
-   }
-
-   .format-section-info ul{
-       width: 400px;
    }
 
    li{
@@ -419,16 +463,21 @@ li{
 /* ------------SECTION 1 ----ПРОГРАММА КУРСА----------------*/
 
 .section1{
-    margin: 70px;
+    background-color: lightpink;
+    padding: 50px;
 }
 
 .block1{
-    margin: 10px 30px 10px 0;
-    width: 400px;
-    height: 300px;
+    margin: 10px ;
+    width: 30%;
+    height: 30%;
     background: #FFFFFF;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
+}
+
+.block1:last-child{
+    margin-bottom: 0;
 }
 
 .section1 .container{
@@ -437,7 +486,7 @@ li{
 }
 
 .rect img{
-    width: 400px;
+    width: 100%;
     height: 150px;
 }
 
@@ -476,14 +525,19 @@ li{
 }
 
 @media (max-width:375px){
+
+    .section1{
+        width: 375px;
+    }
+
     .block1{
         margin: 10px auto;
-        width: 185px;
-        height: 150px;
     }
 
     .section1 .container{
+        margin: auto;
         display: block;
+        width: 375px;
     }
 
     .rect img{
@@ -507,8 +561,6 @@ li{
 /* -----SECTION   2-------КУРС ПРОШЛИ-------------------- */
 
 .section2{
-    height: 780px;
-    width: 1440px;
     background: #EFEFEF;
 }
 
@@ -519,8 +571,8 @@ li{
 }
 
 .inside-section2{
-    height: 451px;
-    width: 791px;
+    height: 90%;
+    width: 60%;
     border-radius: 30px;
     background-color: white;
 }
@@ -546,8 +598,7 @@ li{
 
 @media (max-width:830px){
     .section2{
-      height: calc(780px / 1.7);
-      width: calc(1440px / 1.7);
+        width: 100%;
   }
 
   .text-section2{
@@ -557,14 +608,12 @@ li{
   }
 
   .inside-section2{
-      height: 230px;
-      width: 200px;
       border-radius: 30px;
       background-color: white;
   }
 
-  .main-part{
-      padding: 50px;
+  .main-part h2{
+    font-size: 20px;
   }
   
   .name-section2 h2{
@@ -628,7 +677,7 @@ li{
   .main-part{
     padding: 20px;
   }
-
+}
 
 
 /* ------------SECTION 3 -----НАЧАЛО КУРСА---------------- */
@@ -636,7 +685,7 @@ li{
 .section3{
     background: #9DC9C8;
     height: 780px;
-    width: 1440px;
+    width: 100%;
 }
 
 
@@ -675,11 +724,8 @@ li{
 
 @media (max-width:830px){
     .section3{
-      background: #9DC9C8;
-      height: calc(780px / 1.7);
-      width: calc(1440px / 1.7);
+        height: 30%;
   }
-
 
   .section3 p{
       font-size: 12px;
@@ -744,7 +790,7 @@ li{
 .section4{
     position: relative;
     height: 390px;
-    width: 1440px;
+    width: 100%;
     background-color: #000000;
 }
 
@@ -787,7 +833,6 @@ div.section4 .sincro{
 @media (max-width:830px){
     .section4{
       height: 200px;
-      width: 830px;
       background-color: #000000;
   }
 
@@ -800,7 +845,7 @@ div.section4 .sincro{
   }
 
   div.section4 .sincro{
-      width: px;
+      width: 10px;
       border-top: 9px solid white;
       width: 60px;
       font-size: 12px;
